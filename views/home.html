@@ -1,4 +1,10 @@
+<aside id="back" ng-click="myFun(-1)" class="pull-left"><span class="glyphicon glyphicon-arrow-left"></span></aside>
+<aside id="front" ng-click="myFun(1)" class="pull-right"><span class="glyphicon glyphicon-arrow-right" ></span></aside>
 <section id="slide">
-	 <img src="images/rings/rings5.jpg" alt=""> 
-	 Slide Show verdur her
+		<figure>
+			<img ng-src="{{data.rings[random].img}}" alt="">
+			<figcaption>{{text}}</figcaption>
+		</figure>
 </section>
+
+
