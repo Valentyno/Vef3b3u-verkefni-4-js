@@ -20,47 +20,35 @@ myApp.config(function($routeProvider){
 
 // Ctrl for home page
 myApp.controller('homeCtrl', function($scope, $http){
-		
+	
 	$http.get('json/home.json').success(function(data){
 		$scope.data = data;
+		$scope.random = Math.floor((Math.random() * $scope.data.rings.length) + 0);
+		$scope.text = $scope.data.rings[$scope.random].text;
+		console.log($scope.text);
 		
-		$scope.num = 0;
-		$scope.arrLeng = data.rings.length;
-		$scope.arr = [];
-		$scope.cap = [];
-		$scope.time = 0;
-		
-		// trowing obj inside the array $scope.arr
-		for (var i = 0; i < $scope.data.rings.length; i++) {
-			$scope.arr.push($scope.data.rings[i]);
-		};
-
-		function myFunction(){
+		$scope.myFun = function(x){
+			$scope.random += x;
+			$scope.text = $scope.data.rings[$scope.random].text;
 			
-			$scope.num += 1;
-			return $scope.num;
-		};
+			if($scope.random == $scope.data.rings.length - 1){
+				$("#front").hide();
+			}
+			else{
+				$("#front").show();
+			};
 
 
-		// $scope.time = setInterval(function(){
-		// 	myFunction();
-		// 	$("img").remove();
-		// 	$("<img class='take' src='"+ $scope.data.rings[$scope.num].img +"'>").appendTo("#slide").css("display", "none");
-		// 	$("img.take").fadeIn(1000);
-		// 	// console.log($scope.arr[$scope.num].img);
-		// 	// console.log($scope.num);
-
-		// 	if($scope.num == 4){
-		// 		$scope.num = -1;
-		// 	};
-			
-		// 	$('#home').click(function(){
-		// 		clearInterval($scope.time);
-		// 	});
-		
-		// }, 1000);
+			if($scope.random <= 0){
+				$('#back').hide();
+			}
+			else{
+				$("#back").show();
+			};
+		}	
 
 	});	
+	// finish $http.get
 });
 
 
