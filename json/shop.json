@@ -1,0 +1,53 @@
+{
+    "rings": [
+        {
+            "text": "December openwork heart charm in sterling silver with 2 claw-set London Blue Crystals",
+            "metal": "silver",
+            "img": "images/rings/rings5.jpg",
+            "price": 15000,
+            "ship": "Free shiping",
+            "sale": true
+            
+        },
+        {
+            "text": "Charm Inner Radiance 14K with Clear Cubic Zirconia",
+            "metal": "Gold 14ct",
+            "img": "images/rings/rings1.jpg",
+            "price": 123000,
+            "ship": "Free shiping",
+            "sale": true
+        },
+        {
+            "text": "Charm Tumbling Hearts in 14K Gold with Clear Cubic Zirconia",
+            "metal": "Gold 14ct",
+            "img": "images/rings/rings2.jpg",
+            "price": 23000,
+            "ship": "Free shiping",
+            "sale": true
+        },
+        {
+            "text": "Heart gold clip with pave-set cubic zirconia",
+            "metal": "Gold 14ct",
+            "img": "images/rings/rings3.jpg",
+            "price": 43000,
+            "ship": "Free shiping",
+            "sale": true
+        },
+        {
+            "text": "Charm 14K Gold All Wrapped Up with Clear Cubic Zirconia",
+            "metal": "Gold 14ct",
+            "img": "images/rings/rings4.jpg",
+            "price": 13000,
+            "ship": "Free shiping",
+            "sale": true
+        },
+           {
+            "text": "Charm 14K Gold All Wrapped Up with Clear Cubic Zirconia",
+            "metal": "Gold 14ct",
+            "img": "images/rings/rings4.jpg",
+            "price": 13000,
+            "ship": "Free shiping",
+            "sale": false
+        }
+    ]
+}

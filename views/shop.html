@@ -1,0 +1,14 @@
+<section class="row" id="shop">
+	<article class="col-lg-4" ng-repeat="item in data.rings | filter:{sale:true}">
+		<article class="thumbnail">
+			<img ng-src="{{item.img}}">			
+			<section class="caption">
+				<h3>{{item.metal}}</h3>
+				<p>{{item.text}}</p>
+				
+				<button  type="button" class="btn btn-primary">Buy</button>
+				<b>{{item.ship}}</b>
+			</section>
+		</article>
+	</article>
+</section>
